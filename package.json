@@ -1,0 +1,44 @@
+{
+  "name": "redux-practice-to-do",
+  "version": "1.0.0",
+  "description": "to do list app",
+  "main": "index.js",
+  "repository": "https://github.com/james-built/redux-practice-to-do.git",
+  "author": "james-built <jgbuilt@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server & yarn build --watch",
+    "build": "webpack --config client/webpack.config.js",
+    "test": "jest"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env",
+      "@babel/react"
+    ]
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "knex": "^0.15.2",
+    "pg": "^7.4.3",
+    "sqlite3": "^4.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "jest": "^23.5.0",
+    "jsdom": "^12.0.0",
+    "nodemon": "^1.18.4",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-router-dom": "^4.3.1",
+    "superagent": "^3.8.3",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0"
+  }
+}
